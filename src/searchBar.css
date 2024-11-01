@@ -1,8 +1,8 @@
 .search-container {
-    background-color: blue;
+    background-color: rgb(173, 243, 243);
     padding: 2rem;
     width: 100%;
 }
 button {
-    background-color: rgb(135, 68, 68);
+    background-color: rgb(196, 241, 234);
 }

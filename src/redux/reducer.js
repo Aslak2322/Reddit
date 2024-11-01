@@ -12,7 +12,7 @@ const reducer = (state = initialState, action) => {
     case SET_POSTS:
       return { ...state, posts: action.payload };
     case CLEAR_POSTS:
-      return { ...state, posts: [] }; // Clears posts if needed
+      return { ...state, posts: [] };
     default:
       return state;
   }

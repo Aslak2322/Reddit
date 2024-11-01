@@ -2,9 +2,13 @@
     display: flex;
     margin: 4rem;
     flex-direction: column;
-    background-color: blue;
+    background-color:rgb(33 222, 244);
 }
 .post-list h1 {
     background-color: blue;
     color: beige;
+}
+.post-list li {
+    margin: 1em;
+    overflow: auto;
 }

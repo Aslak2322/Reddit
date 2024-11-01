@@ -4,6 +4,7 @@ import SearchBarComponent from './searchBar';
 import Postlist from './postList';
 import Subreddit from './subReddit';
 import { useState } from 'react';
+import Footer from './contactFooter';
 
 function App() {
   const [selectedSubreddit, setSelectedSubreddit] = useState(null)
@@ -25,10 +26,11 @@ function App() {
         </div>
         <div>
           <h1>Subreddits</h1>
-           <Subreddit onSelectSubreddit={handleSelectSubreddit} />
+           <Subreddit onSelectSubreddit={handleSelectSubreddit} selectedSubreddit={selectedSubreddit} />
         </div>
        </div>
     </header>
+    <Footer/>
     </div>
   );
 }

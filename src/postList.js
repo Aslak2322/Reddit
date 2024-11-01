@@ -24,13 +24,17 @@ function Postlist({ selectedSubreddit }) {
 
     return (
         <div className='post-list'>
-            <h1>Post List</h1>
-            <button onClick={addPost}>Add Post</button>
             <button onClick={handleClearPosts}>Clear</button>
             <ul>
                 {filteredPosts.map(post => (
                     <div>
-                      <li key={post.id}>{post.title}</li>
+                      <li key={post.id}>
+                        <h2>{post.title}</h2>
+                        {post.thumbnail && post.thumbnail !== 'self' && (
+                            <img src={post.thumbnail} alt={post.title} style={{ width: '100%', height: 'auto'}}/>
+                        )}
+                      </li>
+                      
                     </div>
                 ))}
             </ul>

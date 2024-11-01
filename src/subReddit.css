@@ -1,3 +1,15 @@
 .subreddit {
-    background-color: blue;
+    background-color: rgb(33 222, 244);
+}
+.subreddit li {
+    background-color: rgb(169, 240, 252);
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.5;
+    color: black;
+    font-size: 2rem;
+    border-radius: 1rem;
+    border: 2px solid black;
 }

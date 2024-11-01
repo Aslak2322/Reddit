@@ -1,0 +1,5 @@
+footer {
+    background-color:rgb(104, 235, 215);
+    flex-grow: 1;
+    height: 10rem;
+}
